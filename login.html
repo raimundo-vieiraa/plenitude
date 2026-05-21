@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plenitude - Login</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="auth-page">
+    <header>
+        <div class="container">
+            <a class="logo" href="index.html">
+                <img src="Plenitude-logo.png" alt="Plenitude Logo">
+                <span>Plenitude</span>
+            </a>
+        </div>
+    </header>
+
+    <main class="auth-container">
+        <div class="auth-card">
+            <h2>Já estuda com a gente?</h2>
+            <p>Faça seu login para acessar seus cursos e continuar sua formação na Plenitude.</p>
+            <form id="login-form" action="#">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" placeholder="Seu E-mail" required>
+
+                <label for="senha">Senha</label>
+                <input type="password" id="senha" name="senha" placeholder="Sua Senha" required>
+
+                <button type="submit" class="primary-btn">Entrar</button>
+                <button type="button" class="google-btn">Entrar com Google</button>
+            </form>
+            <a class="secondary-link" href="cadastro.html">Ainda não possui conta? Cadastre-se</a>
+        </div>
+    </main>
+
+    <footer class="auth-footer">
+        <nav>
+            <ul>
+                <li><a href="#">Sobre a Plenitude</a></li>
+                <li><a href="#">Cursos</a></li>
+                <li><a href="#">Contato</a></li>
+                <li><a href="#">Redes sociais</a></li>
+            </ul>
+        </nav>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

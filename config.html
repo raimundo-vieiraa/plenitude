@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plenitude - Configurações</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="dashboard-page">
+    <header>
+        <div class="container header-dashboard">
+            <a class="logo" href="index.html">
+                <img src="Plenitude-logo.png" alt="Plenitude Logo">
+                <span>Plenitude</span>
+            </a>
+            <nav class="header-nav">
+                <ul>
+                    <li><a href="index.html">Dashboard</a></li>
+                    <li><a href="config.html" class="active-link">Configurações</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-dashboard">
+        <section class="configuracoes">
+            <div class="container settings-panel">
+                <div class="settings-header">
+                    <h2>Configurações da Conta</h2>
+                    <p>Gerencie todos os ajustes do seu perfil, notificações, privacidade e interface.</p>
+                </div>
+
+                <div class="settings-tabs" role="tablist">
+                    <button class="settings-tab active" data-tab="account" type="button">Conta</button>
+                    <button class="settings-tab" data-tab="notifications" type="button">Notificações</button>
+                    <button class="settings-tab" data-tab="privacy" type="button">Privacidade</button>
+                    <button class="settings-tab" data-tab="display" type="button">Interface</button>
+                    <button class="settings-tab" data-tab="payment" type="button">Pagamento</button>
+                </div>
+
+                <div class="settings-content">
+                    <div class="settings-tab-pane active" id="tab-account">
+                        <div class="settings-card">
+                            <h3>Informações da Conta</h3>
+                            <label>Nome Completo</label>
+                            <input type="text" value="João Silva">
+                            <label>E-mail</label>
+                            <input type="email" value="joao@plenitude.com">
+                            <div class="settings-row">
+                                <div>
+                                    <label>Senha atual</label>
+                                    <input type="password" placeholder="••••••••">
+                                </div>
+                                <div>
+                                    <label>Nova senha</label>
+                                    <input type="password" placeholder="••••••••">
+                                </div>
+                            </div>
+                            <label>Confirmar nova senha</label>
+                            <input type="password" placeholder="••••••••">
+                        </div>
+                        <div class="settings-card">
+                            <h3>Notificações por e-mail</h3>
+                            <div class="settings-toggle">
+                                <span>Ativar notificações de atualizações</span>
+                                <input type="checkbox" checked>
+                            </div>
+                            <div class="settings-toggle">
+                                <span>Receber novidades e ofertas</span>
+                                <input type="checkbox" checked>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="settings-tab-pane" id="tab-notifications">
+                        <div class="settings-card">
+                            <h3>Preferências de Notificação</h3>
+                            <div class="settings-toggle">
+                                <span>Notificações por e-mail</span>
+                                <input type="checkbox" checked>
+                            </div>
+                            <div class="settings-toggle">
+                                <span>Notificações no app</span>
+                                <input type="checkbox">
+                            </div>
+                            <div class="settings-toggle">
+                                <span>Notificações de progresso</span>
+                                <input type="checkbox" checked>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="settings-tab-pane" id="tab-privacy">
+                        <div class="settings-card">
+                            <h3>Privacidade e Segurança</h3>
+                            <div class="settings-toggle">
+                                <span>Autenticação de Dois Fatores (2FA)</span>
+                                <input type="checkbox">
+                            </div>
+                            <div class="settings-toggle">
+                                <span>Gerenciar sessões ativas</span>
+                                <button class="secondary-btn" type="button">Ver sessões</button>
+                            </div>
+                            <div class="settings-toggle">
+                                <span>Excluir conta permanentemente</span>
+                                <button class="danger-btn" type="button">Excluir conta</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="settings-tab-pane" id="tab-display">
+                        <div class="settings-card">
+                            <h3>Preferências de Interface</h3>
+                            <div class="settings-toggle">
+                                <span>Modo Escuro / Modo Claro</span>
+                                <select>
+                                    <option>Modo Escuro</option>
+                                    <option>Modo Claro</option>
+                                </select>
+                            </div>
+                            <div class="settings-toggle">
+                                <span>Tamanho da fonte</span>
+                                <select>
+                                    <option>Normal</option>
+                                    <option>Grande</option>
+                                    <option>Maior</option>
+                                </select>
+                            </div>
+                            <div class="settings-toggle">
+                                <span>Idioma da plataforma</span>
+                                <select>
+                                    <option>Português</option>
+                                    <option>Inglês</option>
+                                    <option>Espanhol</option>
+                                </select>
+                            </div>
+                            <div class="settings-toggle">
+                                <span>Fuso horário</span>
+                                <select>
+                                    <option>GMT-3 (São Paulo)</option>
+                                    <option>GMT-0 (Lisboa)</option>
+                                    <option>GMT-5 (Nova York)</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="settings-tab-pane" id="tab-payment">
+                        <div class="settings-card">
+                            <h3>Pagamento</h3>
+                            <label>Método de pagamento</label>
+                            <input type="text" value="Cartão de crédito **** 1234">
+                            <label>Plano atual</label>
+                            <input type="text" value="Plano Premium">
+                            <button class="primary-btn" type="button">Atualizar método</button>
+                        </div>
+                        <div class="settings-card">
+                            <h3>Histórico</h3>
+                            <p>Veja suas últimas faturas e transações na plataforma.</p>
+                            <button class="secondary-btn" type="button">Ver histórico</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="index.html">Dashboard</a></li>
+                <li><a href="config.html">Configurações</a></li>
+                <li><a href="login.html">Sair</a></li>
+            </ul>
+        </nav>
+        <p>&copy; 2026 Plenitude. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

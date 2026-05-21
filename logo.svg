@@ -1,0 +1,16 @@
+<svg width="120" height="120" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Logomarca Plenitude">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0c4d22" />
+      <stop offset="100%" stop-color="#1c8c3a" />
+    </linearGradient>
+  </defs>
+  <rect width="120" height="120" fill="transparent" />
+  <path d="M20 80 L50 50 L80 80 L50 95 Z" fill="url(#grad)" />
+  <path d="M24 78 L24 42 L50 55 L76 42 L76 78" fill="#ffffff" opacity="0.12" />
+  <path d="M32 46 L50 58 L68 46 L50 34 Z" fill="#ffffff" />
+  <path d="M50 34 L50 58" stroke="#0c4d22" stroke-width="4" />
+  <circle cx="50" cy="28" r="8" fill="#f5e05a" />
+  <path d="M45 22 L55 22 L55 16 L45 16 Z" fill="#ffffff" />
+  <path d="M20 90 Q60 120 100 90" stroke="#0c4d22" stroke-width="8" fill="none" />
+</svg>

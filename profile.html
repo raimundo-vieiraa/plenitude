@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plenitude - Perfil</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="dashboard-page">
+    <header>
+        <div class="container header-dashboard">
+            <a class="logo" href="index.html">
+                <img src="Plenitude-logo.png" alt="Plenitude Logo">
+                <span>Plenitude</span>
+            </a>
+            <nav class="header-nav">
+                <ul>
+                    <li><a href="index.html">Dashboard</a></li>
+                    <li><a href="config.html">Configurações</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-dashboard profile-page">
+        <section class="profile-panel">
+            <div class="container">
+                <div class="profile-header">
+                    <div>
+                        <p class="user-label">Perfil do Usuário</p>
+                        <h2>João Silva</h2>
+                        <p class="profile-subtitle">Atualize seus dados e foto de perfil.</p>
+                    </div>
+                </div>
+
+                <div class="profile-content">
+                    <div class="profile-card profile-photo-card">
+                        <div class="avatar-preview" id="profile-avatar-preview">JS</div>
+                        <label class="upload-label" for="profile-avatar-input">Enviar foto</label>
+                        <input type="file" id="profile-avatar-input" accept="image/*">
+                        <p class="photo-note">Use uma foto nítida para personalizar sua conta.</p>
+                    </div>
+
+                    <div class="profile-card profile-form-card">
+                        <h3>Dados da Conta</h3>
+                        <label>Nome Completo</label>
+                        <input type="text" value="João Silva">
+                        <label>E-mail</label>
+                        <input type="email" value="joao@plenitude.com">
+                        <label>Sobre você</label>
+                        <textarea rows="5" placeholder="Escreva uma breve descrição sobre você."></textarea>
+                        <div class="profile-actions">
+                            <button class="primary-btn" type="button">Salvar Alterações</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="index.html">Dashboard</a></li>
+                <li><a href="config.html">Configurações</a></li>
+                <li><a href="login.html">Sair</a></li>
+            </ul>
+        </nav>
+        <p>&copy; 2026 Plenitude. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
